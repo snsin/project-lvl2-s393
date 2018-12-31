@@ -3,3 +3,6 @@
 
 ## Install gendiff and get help
 [![asciicast](https://asciinema.org/a/IuT0ln8lNdbbREYhVl4xLa9BE.svg)](https://asciinema.org/a/IuT0ln8lNdbbREYhVl4xLa9BE)
+
+## Install gendiff and compare plain configs
+[![asciicast](https://asciinema.org/a/huBIcOVP7XoRy70PvNjFQUUbe.svg)](https://asciinema.org/a/huBIcOVP7XoRy70PvNjFQUUbe)
