@@ -1,6 +1,6 @@
 {
   "name": "gendiff2-snsin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Console utility. Traning project level2 try2",
   "main": "index.js",
   "bin": {
