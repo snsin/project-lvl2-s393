@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import gendiff from 'commander';
 import { version } from '../../package.json';
-import plainJson from '..';
+import diff from '..';
 
 gendiff
   .version(version)
@@ -10,7 +10,7 @@ gendiff
   .option('-f, --format [type]', 'Output format')
   .action((firstConfig, secondConfig) => {
     try {
-      const result = plainJson(firstConfig, secondConfig);
+      const result = diff(firstConfig, secondConfig);
       console.log(result);
     } catch (err) {
       const { errno, message } = err;
