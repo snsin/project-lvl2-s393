@@ -6,3 +6,6 @@
 
 ## Install gendiff and compare plain configs
 [![asciicast](https://asciinema.org/a/huBIcOVP7XoRy70PvNjFQUUbe.svg)](https://asciinema.org/a/huBIcOVP7XoRy70PvNjFQUUbe)
+
+## Install gendiff and compare plain yaml
+[![asciicast](https://asciinema.org/a/y9k4d0rvDnLxRS9bYyzWlRSye.svg)](https://asciinema.org/a/y9k4d0rvDnLxRS9bYyzWlRSye)
