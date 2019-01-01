@@ -7,6 +7,7 @@ test.each([
   ['before.yaml', 'after.yaml', 'b-a-diff.txt'],
   ['before.yaml', 'after.YML', 'b-a-diff.txt'],
   ['.beforerc', 'after.yaml', 'b-a-diff.txt'],
+  ['before.ini', 'after.ini', 'b-a-diff.txt'],
 ])('test %s and %s difference',
   (before, after, expected) => {
     const fixtureDir = '__tests__/__fixtures__';
