@@ -1,22 +1,17 @@
 import path from 'path';
 import { readFileSync } from 'fs';
-import genDiff from '../src';
+import createDiff from '../src';
 
-const getDiffTest = (before, after, expected) => {
-  const fixtureDir = '__tests__/__fixtures__';
-  const beforePath = path.join(fixtureDir, before);
-  const afterPath = path.join(fixtureDir, after);
-  const expectedData = readFileSync(path.join(fixtureDir, expected), 'utf-8');
-  return () => expect(genDiff(beforePath, afterPath)).toBe(expectedData);
-};
-
-test('".confrc"-like config', getDiffTest('.beforerc', 'after.json', 'b-a-diff.txt'));
-
-
-['.json', '.yaml', '.YML'].forEach(ext => test(`pretty format, plain with ${ext}`, () => {
-  const fixtureDir = '__tests__/__fixtures__';
-  const beforePath = path.join(fixtureDir, `before${ext}`);
-  const afterPath = path.join(fixtureDir, `after${ext}`);
-  const expectedData = readFileSync(path.join(fixtureDir, 'b-a-diff.txt'), 'utf-8');
-  expect(genDiff(beforePath, afterPath, 'plain')).toBe(expectedData);
-}));
+test.each([
+  ['before.json', 'after.json', 'b-a-diff.txt'],
+  ['before.yaml', 'after.yaml', 'b-a-diff.txt'],
+  ['before.yaml', 'after.YML', 'b-a-diff.txt'],
+  ['.beforerc', 'after.yaml', 'b-a-diff.txt'],
+])('test %s and %s difference',
+  (before, after, expected) => {
+    const fixtureDir = '__tests__/__fixtures__';
+    const beforePath = path.join(fixtureDir, before);
+    const afterPath = path.join(fixtureDir, after);
+    const expectedData = readFileSync(path.join(fixtureDir, expected), 'utf-8');
+    expect(createDiff(beforePath, afterPath)).toBe(expectedData);
+  });
