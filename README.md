@@ -9,3 +9,6 @@
 
 ## Install gendiff and compare plain yaml
 [![asciicast](https://asciinema.org/a/y9k4d0rvDnLxRS9bYyzWlRSye.svg)](https://asciinema.org/a/y9k4d0rvDnLxRS9bYyzWlRSye)
+
+## Install gendiff and compare plain ini
+[![asciicast](https://asciinema.org/a/ZPCRPwHy0UEWFzHnH8B4iQhGq.svg)](https://asciinema.org/a/ZPCRPwHy0UEWFzHnH8B4iQhGq)
