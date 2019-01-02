@@ -12,3 +12,6 @@
 
 ## Install gendiff and compare plain ini
 [![asciicast](https://asciinema.org/a/ZPCRPwHy0UEWFzHnH8B4iQhGq.svg)](https://asciinema.org/a/ZPCRPwHy0UEWFzHnH8B4iQhGq)
+
+## Install gendiff and compare nested configs
+[![asciicast](https://asciinema.org/a/PUcQoKX0ZhCfSJMrxpi5M8MwP.svg)](https://asciinema.org/a/PUcQoKX0ZhCfSJMrxpi5M8MwP)
