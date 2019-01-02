@@ -1,4 +1,3 @@
-import { union, has } from 'lodash';
 import { readFileSync } from 'fs';
 import { extname } from 'path';
 import parse from './parsers';
