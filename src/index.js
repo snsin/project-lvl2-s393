@@ -10,6 +10,7 @@ export const defaultRenderer = 'pretty';
 export const rendererSelector = {
   [defaultRenderer]: prettyRenderer,
   plain: plainRenderer,
+  json: JSON.stringify,
 };
 
 const selectRenderer = format => (has(rendererSelector, format)
