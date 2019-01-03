@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import gendiff from 'commander';
 import { version } from '../../package.json';
-import createDiff, { defaultRenderer, rendererSelector } from '..';
+import createDiff from '..';
+import { defaultRenderer, rendererSelector } from '../renderers';
 
 const list = Object.keys(rendererSelector).join('|');
 
