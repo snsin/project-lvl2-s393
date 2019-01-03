@@ -15,3 +15,6 @@
 
 ## Install gendiff and compare nested configs
 [![asciicast](https://asciinema.org/a/PUcQoKX0ZhCfSJMrxpi5M8MwP.svg)](https://asciinema.org/a/PUcQoKX0ZhCfSJMrxpi5M8MwP)
+
+## Install gendiff and get diff in plain format
+[![asciicast](https://asciinema.org/a/boId9zhiak3XP460m2MtBYP4P.svg)](https://asciinema.org/a/boId9zhiak3XP460m2MtBYP4P)
