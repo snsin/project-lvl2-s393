@@ -27,7 +27,7 @@ const renderPlain = (tree, parentKey = '') => {
       return `Property '${property}' was removed`;
 
     case 'unchanged':
-      return '';
+      return null;
 
     case 'nested':
       return tree.children.map(child => renderPlain(child, property));
