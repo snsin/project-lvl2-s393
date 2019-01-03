@@ -14,6 +14,9 @@ test.each([
   ['nested-before.json', 'nested-after.json', 'nested-b-a-diff.plain.txt'],
   ['nested-before.yaml', 'nested-after.yaml', 'nested-b-a-diff.plain.txt'],
   ['nested-before.ini', 'nested-after.ini', 'nested-b-a-diff.plain.txt'],
+  ['nested-before.json', 'nested-after.json', 'nested-b-a-diff.json.txt'],
+  ['nested-before.yaml', 'nested-after.yaml', 'nested-b-a-diff.json.txt'],
+  ['nested-before.ini', 'nested-after.ini', 'nested-b-a-diff.json.txt'],
 ])('test %s and %s difference',
   (before, after, expected) => {
     const fixtureDir = '__tests__/__fixtures__';
