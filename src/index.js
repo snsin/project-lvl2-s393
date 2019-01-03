@@ -1,20 +1,8 @@
 import { readFileSync } from 'fs';
 import { extname } from 'path';
-import { has } from 'lodash';
 import parse from './parsers';
 import calcDiff from './diff-ast';
-import plainRenderer from './renderers/plain';
-import prettyRenderer from './renderers/pretty';
-
-export const defaultRenderer = 'pretty';
-export const rendererSelector = {
-  [defaultRenderer]: prettyRenderer,
-  plain: plainRenderer,
-  json: JSON.stringify,
-};
-
-const selectRenderer = format => (has(rendererSelector, format)
-  ? rendererSelector[format] : rendererSelector[defaultRenderer]);
+import selectRenderer from './renderers';
 
 const getFileType = filePath => extname(filePath).toLowerCase().slice(1);
 
